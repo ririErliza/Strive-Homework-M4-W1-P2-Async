@@ -191,7 +191,8 @@
 
     const loadQueen = ()=> {
       fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=queen")
-      .then(res => res.json())
+      .then(res => {
+      return res.json()})
       .then(data => {
         const section = document.getElementById("queenSection")
 
